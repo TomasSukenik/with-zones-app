@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "dev:all": "concurrently --names \"host,first,second,third,fourth\" \"cd host && pnpm run dev -p 3000\" \"cd first && pnpm run dev -p 3001\" \"cd second && pnpm run dev -p 3002\" \"cd third && pnpm run dev -p 3003\" \"cd fourth && pnpm run dev -p 3004\"",
+    "build:all": "concurrently --names \"host,first,second,third,fourth\" \"cd host && pnpm run build\" \"cd first && pnpm run build\" \"cd second && pnpm run build\" \"cd third && pnpm run build\" \"cd fourth && pnpm run build\"",
+    "start:all": "concurrently --names \"host,first,second,third,fourth\" \"cd host && pnpm run start -p 3000\" \"cd first && pnpm run start -p 3001\" \"cd second && pnpm run start -p 3002\" \"cd third && pnpm run start -p 3003\" \"cd fourth && pnpm run start -p 3004\"",
+    "install:all": "concurrently --names \"host,first,second,third,fourth\" \"cd host && pnpm install\" \"cd first && pnpm install\" \"cd second && pnpm install\" \"cd third && pnpm install\" \"cd fourth && pnpm install\"",
+    "clean:all": "concurrently --names \"host,first,second,third,fourth\" \"cd host && pnpm run clean\" \"cd first && pnpm run clean\" \"cd second && pnpm run clean\" \"cd third && pnpm run clean\" \"cd fourth && pnpm run clean\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
