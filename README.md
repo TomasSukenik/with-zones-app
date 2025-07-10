@@ -15,6 +15,7 @@ Each zone has its own `next.config.js`, `package.json`, and `app/` directory, fo
 ## Single app development
 
 `cd second` (cd into specific app's folder)
+
 `pnpm install`
 
 run localhost (localhost:3000)
@@ -22,6 +23,7 @@ run localhost (localhost:3000)
 
 run production build (localhost:3000)
 `pnpm run build`
+
 `pnpm run start`
 
 ## All apps
@@ -30,10 +32,13 @@ run production build (localhost:3000)
 `pnpm install` (install concurrently package)
 
 run localhost
+
 `pnpm run dev:all`
 
 run production build
+
 `pnpm run build:all`
+
 `pnpm run start:all`
 
 ## Note on Next.js Behavior: Development vs Production
